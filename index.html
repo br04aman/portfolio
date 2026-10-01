@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aman Singh — CS Engineer & AI Developer</title>
+  <meta name="description" content="Portfolio of Aman Singh — B.Tech CSE at VIT Amaravati. AI/ML Engineer, Full-Stack Developer, Competitive Programmer. Building real-world intelligent systems." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════
+       NAVBAR
+  ════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>AS<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about"        class="nav-link">About</a></li>
+        <li><a href="#skills"       class="nav-link">Skills</a></li>
+        <li><a href="#projects"     class="nav-link">Projects</a></li>
+        <li><a href="#experience"   class="nav-link">Experience</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact"      class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════
+       HERO
+  ════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <canvas id="particleCanvas"></canvas>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Open to Internships &amp; Opportunities
+      </div>
+
+      <h1 class="hero-title">
+        Hi, I'm <span class="gradient-text">Aman Singh</span>
+      </h1>
+
+      <div class="hero-subtitle-wrap">
+        <span class="hero-subtitle" id="typewriter"></span>
+      </div>
+
+      <p class="hero-description">
+        B.Tech CSE student at <strong>VIT Amaravati</strong> (2023–2027) · Building AI-powered systems,
+        full-stack applications, and data-driven solutions that create real-world impact.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary" id="viewProjectsBtn">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+          View Projects
+        </a>
+        <a href="#contact" class="btn btn-ghost" id="contactBtn">
+          Get in Touch
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number">700+</span>
+          <span class="stat-label">Problems Solved</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">#293</span>
+          <span class="stat-label">CodeChef Peak Rank</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">#1</span>
+          <span class="stat-label">University Datathon</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       ABOUT
+  ════════════════════════════════ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">01 / about</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="about-lead">
+            I'm a <strong>Computer Science Engineering</strong> student at VIT Amaravati passionate about
+            building <strong>AI-powered systems</strong>, full-stack products, and data analytics tools that
+            solve real, meaningful problems.
+          </p>
+          <p>
+            From civic-tech platforms powered by Generative &amp; Agentic AI, to humanitarian data dashboards
+            serving 100+ countries — I build end-to-end solutions that matter. I also thrive in competitive
+            programming: <strong>#293 out of 24,000+</strong> on CodeChef with 700+ problems solved across platforms.
+          </p>
+          <p>
+            I'm currently the <strong>Co-Lead of Bihar Association (Technical Team)</strong> at VIT-AP, and I've
+            won awards at university Datathons and national-level hackathons like Pragati (Hack2Skill).
+          </p>
+          <div class="about-tags reveal-children">
+            <span class="tag">🤖 AI / ML</span>
+            <span class="tag">🌐 Full-Stack Dev</span>
+            <span class="tag">📊 Data Analytics</span>
+            <span class="tag">⚡ Competitive Prog.</span>
+            <span class="tag">🏙️ Civic Tech</span>
+            <span class="tag">🚁 Drone Tech</span>
+          </div>
+        </div>
+
+        <div class="about-cards reveal-children">
+          <!-- Education -->
+          <div class="info-card glass-card">
+            <div class="info-card-icon">🎓</div>
+            <div class="info-card-body">
+              <span class="info-card-label">Education</span>
+              <strong class="info-card-title">VIT Amaravati</strong>
+              <span class="info-card-sub">B.Tech — Computer Science Engineering</span>
+              <span class="info-card-sub">2023 – 2027</span>
+            </div>
+          </div>
+          <!-- Secondary -->
+          <div class="info-card glass-card">
+            <div class="info-card-icon">🏫</div>
+            <div class="info-card-body">
+              <span class="info-card-label">Schooling</span>
+              <strong class="info-card-title">DPS Nalanda &amp; SS Academy</strong>
+              <span class="info-card-sub">Secondary &amp; Higher Secondary</span>
+            </div>
+          </div>
+          <!-- Contact -->
+          <div class="info-card glass-card">
+            <div class="info-card-icon">📍</div>
+            <div class="info-card-body">
+              <span class="info-card-label">Contact</span>
+              <strong class="info-card-title">India</strong>
+              <span class="info-card-sub">+91 8210822219</span>
+            </div>
+          </div>
+          <!-- Community -->
+          <div class="info-card glass-card">
+            <div class="info-card-icon">🤝</div>
+            <div class="info-card-body">
+              <span class="info-card-label">Community Role</span>
+              <strong class="info-card-title">Co-Lead — Bihar Association</strong>
+              <span class="info-card-sub">Technical Team · VIT-AP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       SKILLS
+  ════════════════════════════════ -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">02 / skills</span>
+        <h2 class="section-title">Tech Stack</h2>
+      </div>
+
+      <div class="skills-grid reveal-children">
+
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">💻</div>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill sp-default">Python</span>
+            <span class="skill-pill sp-default">C++</span>
+            <span class="skill-pill sp-default">JavaScript</span>
+            <span class="skill-pill sp-default">TypeScript</span>
+            <span class="skill-pill sp-default">Java</span>
+            <span class="skill-pill sp-default">SQL</span>
+            <span class="skill-pill sp-default">R</span>
+            <span class="skill-pill sp-default">HTML / CSS</span>
+            <span class="skill-pill sp-default">Bash</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">⚙️</div>
+            <h3>Frameworks &amp; Libraries</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill sp-blue">React.js</span>
+            <span class="skill-pill sp-blue">Node.js</span>
+            <span class="skill-pill sp-blue">Express.js</span>
+            <span class="skill-pill sp-blue">Next.js</span>
+            <span class="skill-pill sp-blue">Flask</span>
+            <span class="skill-pill sp-blue">Tailwind CSS</span>
+            <span class="skill-pill sp-blue">Pandas</span>
+            <span class="skill-pill sp-blue">NumPy</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">🛠️</div>
+            <h3>Tools &amp; Platforms</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill sp-violet">AWS</span>
+            <span class="skill-pill sp-violet">Docker</span>
+            <span class="skill-pill sp-violet">MongoDB</span>
+            <span class="skill-pill sp-violet">JWT</span>
+            <span class="skill-pill sp-violet">OpenAI API</span>
+            <span class="skill-pill sp-violet">Gemini API</span>
+            <span class="skill-pill sp-violet">Git / GitHub</span>
+            <span class="skill-pill sp-violet">VS Code</span>
+            <span class="skill-pill sp-violet">PyCharm</span>
+            <span class="skill-pill sp-violet">IntelliJ</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">🧠</div>
+            <h3>CS Fundamentals</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill sp-emerald">DSA</span>
+            <span class="skill-pill sp-emerald">System Design</span>
+            <span class="skill-pill sp-emerald">OOP</span>
+            <span class="skill-pill sp-emerald">DBMS</span>
+            <span class="skill-pill sp-emerald">Operating Systems</span>
+            <span class="skill-pill sp-emerald">Computer Networks</span>
+            <span class="skill-pill sp-emerald">Software Engineering</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       PROJECTS
+  ════════════════════════════════ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">03 / projects</span>
+        <h2 class="section-title">What I've Built</h2>
+        <p class="section-subtitle">End-to-end products, research tools, and AI systems.</p>
+      </div>
+
+      <div class="projects-list reveal-children">
+
+        <!-- Project 1: IssueSnap -->
+        <div class="project-row glass-card">
+          <div class="project-row-left">
+            <div class="project-row-meta">
+              <span class="project-type-badge badge-civic">🏙️ Civic Tech &amp; AI</span>
+              <span class="project-year-tag">2026</span>
+            </div>
+            <h3 class="project-row-title">
+              <span class="project-emoji">📸</span> IssueSnap
+            </h3>
+            <p class="project-row-tagline">AI-Powered Civic Issue Resolution Platform</p>
+            <p class="project-row-desc">
+              End-to-end platform where users capture a civic issue with a photo — <strong>Generative AI</strong> drafts &amp; structures the complaint,
+              <strong>Agentic AI</strong> categorizes, routes, and assigns it to the correct department, and <strong>AI verification</strong> validates
+              resolution before closure. Includes a real-time employee dashboard and public complaints tracker.
+            </p>
+            <div class="project-row-tech">
+              <span class="tb tb-blue">Next.js</span>
+              <span class="tb tb-green">Gemini AI</span>
+              <span class="tb tb-violet">Agentic AI</span>
+              <span class="tb tb-orange">TypeScript</span>
+              <span class="tb tb-red">Firebase</span>
+              <span class="tb tb-slate">Tailwind CSS</span>
+            </div>
+            <div class="project-row-links">
+              <a href="https://issuesnap.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary btn-sm" id="issuesnapDemo">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Demo
+              </a>
+              <span class="team-tag">👥 Team Radicals</span>
+            </div>
+          </div>
+          <div class="project-row-right">
+            <div class="is-preview-card">
+              <div class="isp-bar">
+                <span class="isp-dot r"></span><span class="isp-dot y"></span><span class="isp-dot g"></span>
+                <span class="isp-url">issuesnap.vercel.app</span>
+              </div>
+              <div class="isp-body">
+                <div class="isp-nav">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
+                  <span>IssueSnap</span>
+                </div>
+                <div class="isp-hero">
+                  <div class="isp-camera">📸</div>
+                  <div class="isp-title-line"></div>
+                  <div class="isp-title-line s"></div>
+                </div>
+                <div class="isp-flow">
+                  <div class="isp-step active">
+                    <div class="isp-step-icon">📷</div>
+                    <span>Snap</span>
+                  </div>
+                  <div class="isp-arrow">→</div>
+                  <div class="isp-step">
+                    <div class="isp-step-icon">🤖</div>
+                    <span>AI</span>
+                  </div>
+                  <div class="isp-arrow">→</div>
+                  <div class="isp-step">
+                    <div class="isp-step-icon">✅</div>
+                    <span>Done</span>
+                  </div>
+                </div>
+                <div class="isp-complaints">
+                  <div class="isp-complaint">
+                    <div class="isp-c-dot" style="background:#10b981"></div>
+                    <div class="isp-c-lines"><div class="isp-c-line"></div><div class="isp-c-line s"></div></div>
+                    <span class="isp-badge resolved">Resolved</span>
+                  </div>
+                  <div class="isp-complaint">
+                    <div class="isp-c-dot" style="background:#f59e0b"></div>
+                    <div class="isp-c-lines"><div class="isp-c-line"></div><div class="isp-c-line s"></div></div>
+                    <span class="isp-badge progress">In Progress</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project: ResumeRocket -->
+        <div class="project-row glass-card">
+          <div class="project-row-left">
+            <div class="project-row-meta">
+              <span class="project-type-badge badge-ai">🤖 AI / Full-Stack</span>
+              <span class="project-year-tag">2026</span>
+            </div>
+            <h3 class="project-row-title">
+              <span class="project-emoji">🚀</span> ResumeRocket
+            </h3>
+            <p class="project-row-tagline">AI Resume Screening &amp; Ranking Platform</p>
+            <p class="project-row-desc">
+              Engineered a resume screening pipeline that parses bulk PDF/TXT uploads, vectorizes job description requirements, and uses <strong>LLM-based scoring</strong> to rank candidates (1–10) by skill alignment — with matched/missing skill extraction and <strong>AI-generated justifications</strong> surfaced via a sortable dashboard.
+            </p>
+            <div class="project-row-tech">
+              <span class="tb tb-blue">React</span>
+              <span class="tb tb-green">Next.js</span>
+              <span class="tb tb-violet">OpenAI API</span>
+              <span class="tb tb-orange">Tailwind CSS</span>
+              <span class="tb tb-slate">Parsing</span>
+            </div>
+            <div class="project-row-links">
+              <a href="https://resume-scanner-six.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+          <div class="project-row-right project-row-right-sm">
+             <div class="cli-preview" style="background:#fffdf7; border:2px solid #1e293b; box-shadow:6px 6px 0 #1e293b;">
+              <div class="cli-bar" style="background:white; border-bottom:2px solid #1e293b;">
+                <span class="cli-dot" style="background:#ff5f57; border:1.5px solid #1e293b;"></span>
+                <span class="cli-dot" style="background:#febc2e; border:1.5px solid #1e293b;"></span>
+                <span class="cli-dot" style="background:#28c840; border:1.5px solid #1e293b;"></span>
+                <span class="cli-title" style="color:#64748b;">resume-scanner.vercel.app</span>
+              </div>
+              <div class="cli-body" style="color:#1e293b;">
+                <div class="cli-line" style="color:#1e293b; font-weight:700;">📄 Candidate 1 &nbsp;&nbsp; <span style="color:#10b981;">Score: 9.5/10</span></div>
+                <div class="cli-line" style="color:#64748b;">Matches: React, Node, AI</div>
+                <div class="cli-line" style="color:#1e293b; font-weight:700; margin-top:8px;">📄 Candidate 2 &nbsp;&nbsp; <span style="color:#f59e0b;">Score: 7.2/10</span></div>
+                <div class="cli-line" style="color:#64748b;">Missing: Python, AWS</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project: Ekmaa -->
+        <div class="project-row glass-card">
+          <div class="project-row-left">
+            <div class="project-row-meta">
+              <span class="project-type-badge badge-web">🛒 E-Commerce</span>
+              <span class="project-year-tag">2026</span>
+            </div>
+            <h3 class="project-row-title">
+              <span class="project-emoji">📿</span> Ekmaa
+            </h3>
+            <p class="project-row-tagline">Authentic Spiritual Products &amp; Energy Stones</p>
+            <p class="project-row-desc">
+              Developed a full-stack e-commerce platform for authentic, lab-certified spiritual items, handcrafted prayer beads, and energy stones. Built with a responsive modern UI, integrated shopping cart, and seamless checkout experience.
+            </p>
+            <div class="project-row-tech">
+              <span class="tb tb-blue">Next.js</span>
+              <span class="tb tb-green">React</span>
+              <span class="tb tb-orange">Tailwind CSS</span>
+              <span class="tb tb-violet">Vercel</span>
+            </div>
+            <div class="project-row-links">
+              <a href="https://ekmaa.in/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+          <div class="project-row-right project-row-right-sm">
+             <div class="dashboard-preview">
+              <div class="dp-header" style="justify-content:center;">
+                <span style="font-size:1.1rem; background:linear-gradient(to right, black, red, black); -webkit-background-clip:text; color:transparent; font-weight:900;">एकमा (Ekmaa)</span>
+              </div>
+              <div class="dp-stats">
+                <div class="dp-stat-box" style="padding:16px 8px;">
+                  <span class="dp-stat-num" style="font-size:0.9rem;">Energy Stones</span>
+                </div>
+                <div class="dp-stat-box" style="padding:16px 8px;">
+                  <span class="dp-stat-num" style="font-size:0.9rem;">Prayer Beads</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project: Urban Counsellor -->
+        <div class="project-row glass-card">
+          <div class="project-row-left">
+            <div class="project-row-meta">
+              <span class="project-type-badge badge-web">🌐 Web Platform</span>
+              <span class="project-year-tag">2026</span>
+            </div>
+            <h3 class="project-row-title">
+              <span class="project-emoji">💬</span> Urban Counsellor
+            </h3>
+            <p class="project-row-tagline">Professional Counseling &amp; Therapy Platform</p>
+            <p class="project-row-desc">
+              Designed and built a modern web application connecting individuals with professional urban counselors. Features secure authentication, seamless booking flows, and an intuitive user interface for managing therapy sessions.
+            </p>
+            <div class="project-row-tech">
+              <span class="tb tb-blue">Next.js</span>
+              <span class="tb tb-green">React</span>
+              <span class="tb tb-violet">Auth</span>
+              <span class="tb tb-slate">Vercel</span>
+            </div>
+            <div class="project-row-links">
+              <a href="https://urban-counsellor-6sh6-ohaj4au31-br04aman-gmailcoms-projects.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+          <div class="project-row-right project-row-right-sm">
+             <div class="cli-preview" style="background:#0f172a; border-color:#334155;">
+              <div class="cli-bar" style="background:#1e293b; border-bottom:1px solid #334155;">
+                <span class="cli-dot" style="background:#ef4444"></span>
+                <span class="cli-dot" style="background:#f59e0b"></span>
+                <span class="cli-dot" style="background:#10b981"></span>
+                <span class="cli-title" style="color:#94a3b8;">urban-counsellor</span>
+              </div>
+              <div class="cli-body">
+                <div class="cli-line" style="color:#94a3b8; font-weight:bold;">> Secure Login Portal...</div>
+                <div class="cli-line" style="color:#10b981;">✓ Authenticated successfully.</div>
+                <div class="cli-line" style="color:#38bdf8; font-weight:bold;">> Finding available counselors...</div>
+                <div class="cli-line" style="color:#f8fafc;">3 sessions matched your criteria.</div>
+              </div>
+            </div>
+          </div>
+        <!-- Project 2: Bihar Migration EDA -->
+        <div class="project-row glass-card">
+          <div class="project-row-left">
+            <div class="project-row-meta">
+              <span class="project-type-badge badge-data">📊 Data Analytics</span>
+              <span class="project-year-tag">2025</span>
+            </div>
+            <h3 class="project-row-title">
+              <span class="project-emoji">🗺️</span> Bihar Migration EDA
+            </h3>
+            <p class="project-row-tagline">Census of India (NADA) — District-level Migration Analysis</p>
+            <p class="project-row-desc">
+              Performed exploratory data analysis on Census of India (NADA) Bihar migration data using Python, Pandas, and NumPy.
+              Identified district-level migration trends and patterns with <strong>~95% analytical accuracy</strong>.
+              Visualized complex demographic data into actionable insights.
+            </p>
+            <div class="project-row-tech">
+              <span class="tb tb-blue">Python</span>
+              <span class="tb tb-green">Pandas</span>
+              <span class="tb tb-violet">NumPy</span>
+              <span class="tb tb-orange">Matplotlib</span>
+              <span class="tb tb-slate">Seaborn</span>
+            </div>
+          </div>
+          <div class="project-row-right project-row-right-sm">
+            <div class="data-viz-preview">
+              <div class="dvp-header">Bihar Migration Analysis</div>
+              <div class="dvp-chart">
+                <div class="dvp-bar-group">
+                  <div class="dvp-bar" style="height:75%; background: linear-gradient(to top, #7c3aed, #a78bfa);">
+                    <div class="dvp-bar-label">Patna</div>
+                  </div>
+                  <div class="dvp-bar" style="height:55%; background: linear-gradient(to top, #4f46e5, #818cf8);">
+                    <div class="dvp-bar-label">Gaya</div>
+                  </div>
+                  <div class="dvp-bar" style="height:90%; background: linear-gradient(to top, #06b6d4, #67e8f9);">
+                    <div class="dvp-bar-label">Muzaffarpur</div>
+                  </div>
+                  <div class="dvp-bar" style="height:40%; background: linear-gradient(to top, #ec4899, #f9a8d4);">
+                    <div class="dvp-bar-label">Bhagalpur</div>
+                  </div>
+                  <div class="dvp-bar" style="height:65%; background: linear-gradient(to top, #10b981, #6ee7b7);">
+                    <div class="dvp-bar-label">Darbhanga</div>
+                  </div>
+                </div>
+              </div>
+              <div class="dvp-stat">~95% Analytical Accuracy</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Humanitarian Dashboard -->
+        <div class="project-row glass-card">
+          <div class="project-row-left">
+            <div class="project-row-meta">
+              <span class="project-type-badge badge-web">🌍 Full-Stack</span>
+              <span class="project-year-tag">2025</span>
+            </div>
+            <h3 class="project-row-title">
+              <span class="project-emoji">📈</span> Humanitarian Data Dashboard
+            </h3>
+            <p class="project-row-tagline">Interactive Visualization for 100+ Countries</p>
+            <p class="project-row-desc">
+              Built a Flask-Dash dashboard to visualize humanitarian data across <strong>100+ countries</strong>, including refugee
+              trends, displacement patterns, and aid distribution. Improved trend analysis speed by <strong>35%</strong> through
+              optimized data pipelines and interactive Plotly charts.
+            </p>
+            <div class="project-row-tech">
+              <span class="tb tb-blue">Flask</span>
+              <span class="tb tb-green">Dash</span>
+              <span class="tb tb-violet">Plotly</span>
+              <span class="tb tb-orange">Python</span>
+              <span class="tb tb-slate">Pandas</span>
+            </div>
+          </div>
+          <div class="project-row-right project-row-right-sm">
+            <div class="dashboard-preview">
+              <div class="dp-header">
+                <span>Global Dashboard</span>
+                <span class="dp-live">● LIVE</span>
+              </div>
+              <div class="dp-stats">
+                <div class="dp-stat-box">
+                  <span class="dp-stat-num">100+</span>
+                  <span class="dp-stat-lbl">Countries</span>
+                </div>
+                <div class="dp-stat-box">
+                  <span class="dp-stat-num">35%</span>
+                  <span class="dp-stat-lbl">Faster</span>
+                </div>
+              </div>
+              <div class="dp-line-chart">
+                <svg viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <polyline points="0,50 30,35 60,40 90,20 120,28 150,12 200,18"
+                    stroke="url(#chartGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                  <polygon points="0,50 30,35 60,40 90,20 120,28 150,12 200,18 200,60 0,60"
+                    fill="url(#chartFill)" opacity="0.25"/>
+                  <defs>
+                    <linearGradient id="chartGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" stop-color="#7c3aed"/>
+                      <stop offset="100%" stop-color="#06b6d4"/>
+                    </linearGradient>
+                    <linearGradient id="chartFill" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" stop-color="#7c3aed"/>
+                      <stop offset="100%" stop-color="transparent"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: AI CLI Agents -->
+        <div class="project-row glass-card">
+          <div class="project-row-left">
+            <div class="project-row-meta">
+              <span class="project-type-badge badge-ai">🤖 AI / NLP</span>
+              <span class="project-year-tag">2025</span>
+            </div>
+            <h3 class="project-row-title">
+              <span class="project-emoji">⌨️</span> AI Python CLI Agents
+            </h3>
+            <p class="project-row-tagline">OpenAI API · Prompt Engineering · NLP Suite</p>
+            <p class="project-row-desc">
+              Engineered a suite of AI-driven Python CLI agents using the OpenAI API for advanced NLP tasks —
+              including real-time Q&amp;A, context-aware conversations, and <strong>three-sentence text summarization</strong>
+              via Prompt Engineering.
+            </p>
+            <div class="project-row-tech">
+              <span class="tb tb-blue">Python</span>
+              <span class="tb tb-green">OpenAI API</span>
+              <span class="tb tb-violet">Prompt Engineering</span>
+              <span class="tb tb-orange">NLP</span>
+              <span class="tb tb-slate">CLI</span>
+            </div>
+          </div>
+          <div class="project-row-right project-row-right-sm">
+            <div class="cli-preview">
+              <div class="cli-bar">
+                <span class="cli-dot" style="background:#ff5f57"></span>
+                <span class="cli-dot" style="background:#febc2e"></span>
+                <span class="cli-dot" style="background:#28c840"></span>
+                <span class="cli-title">ai-agent — python</span>
+              </div>
+              <div class="cli-body">
+                <div class="cli-line"><span class="cli-prompt">$</span> python agent.py</div>
+                <div class="cli-line cli-sys">🤖 AI Agent initialized...</div>
+                <div class="cli-line"><span class="cli-prompt">→</span> <span class="cli-input">summarize "Climate change..."</span></div>
+                <div class="cli-line cli-output">✓ Summarizing text...</div>
+                <div class="cli-line cli-result">Summary: Climate change poses a global threat...</div>
+                <div class="cli-line"><span class="cli-prompt">→</span> <span class="cli-cursor">_</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       EXPERIENCE
+  ════════════════════════════════ -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">04 / experience</span>
+        <h2 class="section-title">Work &amp; Learning</h2>
+      </div>
+
+      <div class="exp-grid">
+
+        <div class="exp-card glass-card reveal">
+          <div class="exp-card-top">
+            <div class="exp-icon-wrap" style="background: rgba(124,58,237,0.15); border-color: rgba(124,58,237,0.3);">
+              <span>📊</span>
+            </div>
+            <div class="exp-date-badge">May – Jul 2025</div>
+          </div>
+          <h3 class="exp-role">Data Analytics Intern</h3>
+          <p class="exp-company">TechNest DataAnalytics</p>
+          <p class="exp-desc">
+            Worked on real-world analytics projects applying Python and statistical tools to derive business insights.
+            Gained hands-on experience with end-to-end data pipelines, cleaning, transformation, and visualization.
+          </p>
+          <div class="exp-tags">
+            <span class="skill-pill sp-violet">Python</span>
+            <span class="skill-pill sp-violet">Data Analysis</span>
+            <span class="skill-pill sp-violet">Visualization</span>
+          </div>
+        </div>
+
+        <div class="exp-card glass-card reveal">
+          <div class="exp-card-top">
+            <div class="exp-icon-wrap" style="background: rgba(6,182,212,0.15); border-color: rgba(6,182,212,0.3);">
+              <span>🏢</span>
+            </div>
+            <div class="exp-date-badge">April 2025</div>
+          </div>
+          <h3 class="exp-role">Data Analytics Job Simulation</h3>
+          <p class="exp-company">Deloitte Australia · Forage</p>
+          <p class="exp-desc">
+            Completed Deloitte Australia's virtual job simulation focused on data analysis, forensic technology, 
+            and business intelligence — deriving actionable insights from complex enterprise datasets.
+          </p>
+          <div class="exp-tags">
+            <span class="skill-pill sp-blue">Business Intelligence</span>
+            <span class="skill-pill sp-blue">Forensic Tech</span>
+          </div>
+        </div>
+
+        <div class="exp-card glass-card reveal">
+          <div class="exp-card-top">
+            <div class="exp-icon-wrap" style="background: rgba(16,185,129,0.15); border-color: rgba(16,185,129,0.3);">
+              <span>🤖</span>
+            </div>
+            <div class="exp-date-badge">2025</div>
+          </div>
+          <h3 class="exp-role">Prompt Engineering Certification</h3>
+          <p class="exp-company">LinkedIn Learning</p>
+          <p class="exp-desc">
+            Completed "Introduction to Prompt Engineering for Generative AI" — building foundational expertise in
+            designing effective, structured prompts for large language models (LLMs) and generative AI systems.
+          </p>
+          <div class="exp-tags">
+            <span class="skill-pill sp-emerald">LLMs</span>
+            <span class="skill-pill sp-emerald">Prompt Engineering</span>
+            <span class="skill-pill sp-emerald">GenAI</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       ACHIEVEMENTS
+  ════════════════════════════════ -->
+  <section class="section" id="achievements">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">05 / achievements</span>
+        <h2 class="section-title">Recognition &amp; Awards</h2>
+      </div>
+
+      <div class="achievements-grid reveal-children">
+
+        <div class="ach-card glass-card ach-gold">
+          <div class="ach-top">
+            <span class="ach-icon">🥇</span>
+            <span class="ach-year">2025</span>
+          </div>
+          <h3 class="ach-title">1st Place — University Datathon</h3>
+          <p class="ach-desc">
+            Secured <strong>1st place among 100+ teams</strong> by designing a predictive analytics solution for global refugee migration trends using machine learning models.
+          </p>
+          <div class="ach-bar" style="--ach-color: #f59e0b; width: 100%;"></div>
+        </div>
+
+        <div class="ach-card glass-card ach-violet">
+          <div class="ach-top">
+            <span class="ach-icon">⚡</span>
+            <span class="ach-year">Competitive</span>
+          </div>
+          <h3 class="ach-title">CodeChef Peak Rank #293</h3>
+          <p class="ach-desc">
+            Achieved all-time highest rank of <strong>#293 out of 24,000+</strong> participants in CodeChef DIV 3. Solved 700+ algorithmic problems across platforms.
+          </p>
+          <div class="ach-bar" style="--ach-color: #7c3aed; width: 85%;"></div>
+        </div>
+
+        <div class="ach-card glass-card ach-emerald">
+          <div class="ach-top">
+            <span class="ach-icon">🚀</span>
+            <span class="ach-year">2025</span>
+          </div>
+          <h3 class="ach-title">Top 10% — Pragati Hackathon</h3>
+          <p class="ach-desc">
+            Selected among <strong>top 10% of teams</strong> at Pragati Hackathon (Hack2Skill) for building AI-powered models for healthcare and rural education.
+          </p>
+          <div class="ach-bar" style="--ach-color: #10b981; width: 90%;"></div>
+        </div>
+
+        <div class="ach-card glass-card ach-blue">
+          <div class="ach-top">
+            <span class="ach-icon">🛸</span>
+            <span class="ach-year">2024</span>
+          </div>
+          <h3 class="ach-title">Amaravati Drone Hackathon</h3>
+          <p class="ach-desc">
+            Participated and pitched an innovative drone technology solution, showcasing creativity and technical depth in autonomous aerial systems.
+          </p>
+          <div class="ach-bar" style="--ach-color: #3b82f6; width: 75%;"></div>
+        </div>
+
+        <div class="ach-card glass-card ach-rose">
+          <div class="ach-top">
+            <span class="ach-icon">🎖️</span>
+            <span class="ach-year">2024</span>
+          </div>
+          <h3 class="ach-title">CodingNinjas Bootcamp — Excellence</h3>
+          <p class="ach-desc">
+            Received certificate for <strong>excellent performance</strong> in the CodingNinjas × VIT-AP Bootcamp, demonstrating advanced DSA and problem-solving skills.
+          </p>
+          <div class="ach-bar" style="--ach-color: #f43f5e; width: 80%;"></div>
+        </div>
+
+        <div class="ach-card glass-card ach-amber">
+          <div class="ach-top">
+            <span class="ach-icon">🎤</span>
+            <span class="ach-year">2024</span>
+          </div>
+          <h3 class="ach-title">2nd Place — University Debate</h3>
+          <p class="ach-desc">
+            Secured <strong>2nd position</strong> in the university-level debate competition organized by Hindi Samiti at VIT-AP, demonstrating strong public speaking and critical reasoning.
+          </p>
+          <div class="ach-bar" style="--ach-color: #f59e0b; width: 70%;"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       CONTACT
+  ════════════════════════════════ -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">06 / contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">Open to internships, research collaborations, and exciting engineering challenges.</p>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-items reveal-children">
+          <a href="tel:+918210822219" class="contact-item glass-card" id="phoneContact">
+            <div class="ci-icon">📱</div>
+            <div class="ci-body">
+              <span class="ci-label">Phone</span>
+              <span class="ci-value">+91 8210822219</span>
+            </div>
+            <svg class="ci-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+          <a href="https://github.com/" target="_blank" rel="noopener" class="contact-item glass-card" id="githubContact">
+            <div class="ci-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </div>
+            <div class="ci-body">
+              <span class="ci-label">GitHub</span>
+              <span class="ci-value">github.com/aman-singh</span>
+            </div>
+            <svg class="ci-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/aman-singh" target="_blank" rel="noopener" class="contact-item glass-card" id="linkedinContact">
+            <div class="ci-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="#0A66C2"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </div>
+            <div class="ci-body">
+              <span class="ci-label">LinkedIn</span>
+              <span class="ci-value">linkedin.com/in/aman-singh</span>
+            </div>
+            <svg class="ci-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+          <div class="contact-item glass-card" id="focusContact">
+            <div class="ci-icon">🎯</div>
+            <div class="ci-body">
+              <span class="ci-label">Currently Exploring</span>
+              <span class="ci-value">AI/ML Engineering · Full-Stack · Open Source</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-cta-card glass-card reveal">
+          <div class="cta-glow-orb"></div>
+          <div class="cta-card-content">
+            <div class="cta-greeting">
+              <span>👋</span> Ready to collaborate?
+            </div>
+            <h3 class="cta-heading">Let's build something<br /><span class="gradient-text">remarkable together.</span></h3>
+            <p class="cta-body">
+              Whether it's a startup idea, research project, or a challenging engineering problem — 
+              I'm always excited to take on new opportunities.
+            </p>
+            <a href="tel:+918210822219" class="btn btn-primary btn-lg" id="ctaCallBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Say Hello
+            </a>
+            <div class="cta-links">
+              <a href="https://issuesnap.vercel.app/" target="_blank" rel="noopener" class="cta-link" id="ctaIssuesnap">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                IssueSnap Demo
+              </a>
+              <a href="https://github.com/" target="_blank" rel="noopener" class="cta-link" id="ctaGithub">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       FOOTER
+  ════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#hero" class="nav-logo footer-logo">
+          <span class="logo-bracket">&lt;</span>AS<span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-tag">Aman Singh · B.Tech CSE · VIT Amaravati · 2023–2027</p>
+        <p class="footer-copy">© 2026 Aman Singh. Built with passion &amp; code.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
